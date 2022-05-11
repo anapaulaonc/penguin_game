@@ -5,6 +5,8 @@
 Game* Game::instance = nullptr;
 #include "SDL_include.h"
 #include <iostream>
+#include <cstdlib>
+#include <ctime>
 
 
 
@@ -14,7 +16,7 @@ Game& Game::GetInstance(){
         return *instance;
     }
     //Cria um novo game e atribui nome e dimensoes
-    new Game("Ana Paula", 1024, 800);
+    new Game("Penguin Game", 1024, 600);
     return *instance;
 }
 
