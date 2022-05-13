@@ -1,5 +1,5 @@
 ###############
-# 	 Linux   	#
+# 	 Linux    #
 ###############
 
 COMPILER = g++
@@ -35,7 +35,7 @@ OBJ_FILES  = $(addprefix $(BIN_PATH)/, $(notdir $(CPP_FILES:.cpp=.o)))
 EXEC = game
 
 ###############
-# 	Windows 	#
+# 	Windows   #
 ###############
 
 
@@ -51,7 +51,7 @@ SDL_INC_PATH += $(addsuffix /include, $(SDL_PATHS))
 LINK_PATH = $(addprefix -L, $(addsuffix /lib, $(SDL_PATHS)))
 # FLAGS += -mwindows
 # DFLAGS += -mconsole
-LIBS := -lSDL2main $(LIBS)
+LIBS := -lmingw32 -lSDL2main $(LIBS)
 
 EXEC := build/$(EXEC).exe
 
@@ -61,7 +61,7 @@ UNAME_S := $(shell uname -s)
 
 
 ###############
-# 	  MAC		  #
+# 	  MAC	  #
 ###############
 
 ifeq ($(UNAME_S), Darwin)

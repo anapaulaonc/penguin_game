@@ -3,6 +3,7 @@
 
 #include "Game.h"
 Game* Game::instance = nullptr;
+
 #include "SDL_include.h"
 #include <iostream>
 #include <cstdlib>

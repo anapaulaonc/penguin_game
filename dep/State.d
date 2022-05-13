@@ -121,8 +121,7 @@ dep/State.d bin/State.o: src/State.cpp /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/asm/errno.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
- /usr/include/c++/9/bits/basic_string.tcc src/Sprite.h src/SDL_include.h \
- /usr/include/SDL2/SDL_image.h /usr/include/SDL2/SDL.h \
+ /usr/include/c++/9/bits/basic_string.tcc /usr/include/SDL2/SDL.h \
  /usr/include/SDL2/SDL_main.h /usr/include/SDL2/SDL_stdinc.h \
  /usr/include/SDL2/SDL_config.h \
  /usr/include/x86_64-linux-gnu/SDL2/_real_SDL_config.h \
@@ -235,8 +234,10 @@ dep/State.d bin/State.o: src/State.cpp /usr/include/stdc-predef.h \
  /usr/include/SDL2/SDL_render.h /usr/include/SDL2/SDL_sensor.h \
  /usr/include/SDL2/SDL_shape.h /usr/include/SDL2/SDL_system.h \
  /usr/include/SDL2/SDL_timer.h /usr/include/SDL2/SDL_version.h \
- src/Component.h src/Music.h /usr/include/SDL2/SDL_mixer.h \
- /usr/include/c++/9/vector /usr/include/c++/9/bits/stl_construct.h \
+ src/Sprite.h src/SDL_include.h /usr/include/SDL2/SDL_image.h \
+ /usr/include/SDL2/SDL.h src/Component.h src/Music.h \
+ /usr/include/SDL2/SDL_mixer.h /usr/include/c++/9/vector \
+ /usr/include/c++/9/bits/stl_construct.h \
  /usr/include/c++/9/bits/stl_uninitialized.h /usr/include/c++/9/utility \
  /usr/include/c++/9/bits/stl_relops.h \
  /usr/include/c++/9/bits/stl_vector.h \
@@ -258,9 +259,9 @@ dep/State.d bin/State.o: src/State.cpp /usr/include/stdc-predef.h \
  /usr/include/c++/9/backward/auto_ptr.h \
  /usr/include/c++/9/pstl/glue_memory_defs.h \
  /usr/include/c++/9/pstl/execution_defs.h src/Vec2.h src/Face.h \
- src/GameObject.h src/Rect.h src/Sound.h /usr/include/c++/9/iostream \
- /usr/include/c++/9/ostream /usr/include/c++/9/ios \
- /usr/include/c++/9/bits/ios_base.h \
+ src/GameObject.h src/Rect.h src/Sound.h src/TileMap.h src/TileSet.h \
+ /usr/include/c++/9/iostream /usr/include/c++/9/ostream \
+ /usr/include/c++/9/ios /usr/include/c++/9/bits/ios_base.h \
  /usr/include/c++/9/bits/locale_classes.h \
  /usr/include/c++/9/bits/locale_classes.tcc \
  /usr/include/c++/9/system_error \
@@ -579,12 +580,6 @@ src/State.h:
 
 /usr/include/c++/9/bits/basic_string.tcc:
 
-src/Sprite.h:
-
-src/SDL_include.h:
-
-/usr/include/SDL2/SDL_image.h:
-
 /usr/include/SDL2/SDL.h:
 
 /usr/include/SDL2/SDL_main.h:
@@ -865,6 +860,14 @@ src/SDL_include.h:
 
 /usr/include/SDL2/SDL_version.h:
 
+src/Sprite.h:
+
+src/SDL_include.h:
+
+/usr/include/SDL2/SDL_image.h:
+
+/usr/include/SDL2/SDL.h:
+
 src/Component.h:
 
 src/Music.h:
@@ -938,6 +941,10 @@ src/GameObject.h:
 src/Rect.h:
 
 src/Sound.h:
+
+src/TileMap.h:
+
+src/TileSet.h:
 
 /usr/include/c++/9/iostream:
 

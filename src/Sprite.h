@@ -2,6 +2,7 @@
 #define _SPRITE_H
 
 #include <string>
+#include <SDL2/SDL.h>
 #define INCLUDE_SDL_IMAGE
 #include "SDL_include.h"
 #include "Component.h"
@@ -14,11 +15,11 @@ class Sprite : public Component{
         ~Sprite();
         void Open(string file);
         void SetClip(int x, int y, int w, int h);
-        void Render(int x, int y);
         int GetWidth();
         int GetHeight();
         bool IsOpen();
         void Update(float dt);
+        void Render(float x, float y);
         void Render();
         bool Is(string type);
     private:

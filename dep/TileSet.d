@@ -1,5 +1,5 @@
-dep/Sprite.d bin/Sprite.o: src/Sprite.cpp /usr/include/stdc-predef.h \
- src/Sprite.h /usr/include/c++/9/string \
+dep/TileSet.d bin/TileSet.o: src/TileSet.cpp /usr/include/stdc-predef.h \
+ src/TileSet.h /usr/include/c++/9/string \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
@@ -121,9 +121,9 @@ dep/Sprite.d bin/Sprite.o: src/Sprite.cpp /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/asm/errno.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
- /usr/include/c++/9/bits/basic_string.tcc /usr/include/SDL2/SDL.h \
- /usr/include/SDL2/SDL_main.h /usr/include/SDL2/SDL_stdinc.h \
- /usr/include/SDL2/SDL_config.h \
+ /usr/include/c++/9/bits/basic_string.tcc src/Sprite.h \
+ /usr/include/SDL2/SDL.h /usr/include/SDL2/SDL_main.h \
+ /usr/include/SDL2/SDL_stdinc.h /usr/include/SDL2/SDL_config.h \
  /usr/include/x86_64-linux-gnu/SDL2/_real_SDL_config.h \
  /usr/include/SDL2/SDL_platform.h /usr/include/SDL2/begin_code.h \
  /usr/include/SDL2/close_code.h /usr/include/c++/9/stdlib.h \
@@ -235,8 +235,7 @@ dep/Sprite.d bin/Sprite.o: src/Sprite.cpp /usr/include/stdc-predef.h \
  /usr/include/SDL2/SDL_shape.h /usr/include/SDL2/SDL_system.h \
  /usr/include/SDL2/SDL_timer.h /usr/include/SDL2/SDL_version.h \
  src/SDL_include.h /usr/include/SDL2/SDL_image.h /usr/include/SDL2/SDL.h \
- src/Component.h src/Game.h src/State.h src/Music.h \
- /usr/include/SDL2/SDL_mixer.h /usr/include/c++/9/vector \
+ src/Component.h src/GameObject.h /usr/include/c++/9/vector \
  /usr/include/c++/9/bits/stl_construct.h \
  /usr/include/c++/9/bits/stl_uninitialized.h /usr/include/c++/9/utility \
  /usr/include/c++/9/bits/stl_relops.h \
@@ -258,16 +257,9 @@ dep/Sprite.d bin/Sprite.o: src/Sprite.cpp /usr/include/stdc-predef.h \
  /usr/include/c++/9/bits/atomic_lockfree_defines.h \
  /usr/include/c++/9/backward/auto_ptr.h \
  /usr/include/c++/9/pstl/glue_memory_defs.h \
- /usr/include/c++/9/pstl/execution_defs.h src/GameObject.h src/Rect.h \
- src/Resources.h /usr/include/c++/9/unordered_map \
- /usr/include/c++/9/bits/hashtable.h \
- /usr/include/c++/9/bits/hashtable_policy.h \
- /usr/include/c++/9/bits/node_handle.h /usr/include/c++/9/optional \
- /usr/include/c++/9/bits/enable_special_members.h \
- /usr/include/c++/9/bits/unordered_map.h \
- /usr/include/c++/9/bits/erase_if.h /usr/include/c++/9/iostream \
- /usr/include/c++/9/ostream /usr/include/c++/9/ios \
- /usr/include/c++/9/bits/ios_base.h \
+ /usr/include/c++/9/pstl/execution_defs.h src/Rect.h \
+ /usr/include/c++/9/iostream /usr/include/c++/9/ostream \
+ /usr/include/c++/9/ios /usr/include/c++/9/bits/ios_base.h \
  /usr/include/c++/9/bits/locale_classes.h \
  /usr/include/c++/9/bits/locale_classes.tcc \
  /usr/include/c++/9/system_error \
@@ -286,7 +278,7 @@ dep/Sprite.d bin/Sprite.o: src/Sprite.cpp /usr/include/stdc-predef.h \
 
 /usr/include/stdc-predef.h:
 
-src/Sprite.h:
+src/TileSet.h:
 
 /usr/include/c++/9/string:
 
@@ -586,6 +578,8 @@ src/Sprite.h:
 
 /usr/include/c++/9/bits/basic_string.tcc:
 
+src/Sprite.h:
+
 /usr/include/SDL2/SDL.h:
 
 /usr/include/SDL2/SDL_main.h:
@@ -874,13 +868,7 @@ src/SDL_include.h:
 
 src/Component.h:
 
-src/Game.h:
-
-src/State.h:
-
-src/Music.h:
-
-/usr/include/SDL2/SDL_mixer.h:
+src/GameObject.h:
 
 /usr/include/c++/9/vector:
 
@@ -940,27 +928,7 @@ src/Music.h:
 
 /usr/include/c++/9/pstl/execution_defs.h:
 
-src/GameObject.h:
-
 src/Rect.h:
-
-src/Resources.h:
-
-/usr/include/c++/9/unordered_map:
-
-/usr/include/c++/9/bits/hashtable.h:
-
-/usr/include/c++/9/bits/hashtable_policy.h:
-
-/usr/include/c++/9/bits/node_handle.h:
-
-/usr/include/c++/9/optional:
-
-/usr/include/c++/9/bits/enable_special_members.h:
-
-/usr/include/c++/9/bits/unordered_map.h:
-
-/usr/include/c++/9/bits/erase_if.h:
 
 /usr/include/c++/9/iostream:
 
